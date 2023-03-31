@@ -20,6 +20,8 @@ def multiplication():
     result = numbers.num1 * numbers.num2
     return {"result": result}
 
+
+
 @app.route('/subtraction', methods=['POST'])
 def subtraction():
     numbers = Numbers(**request.json)
